@@ -1,0 +1,45 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+
+.post_all{
+    padding-top: 100px;
+}
+.toukouimage {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    padding-top: -80px;
+}
+
+.img-toukou{
+    position: absolute;
+    height: 140%;
+    width: auto;
+}
+
+.cacktailfield{
+    margin: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.field{
+    margin: 10px;
+}
+
+.explain{
+    padding: 120px;
+    justify-content: center;
+    align-items: center;
+}
+
+.post{
+    padding: 120px;
+    margin: 30px;
+    justify-content: center;
+    align-items: center;
+}

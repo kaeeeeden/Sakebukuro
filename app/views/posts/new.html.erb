@@ -1,0 +1,49 @@
+<div class = "toukouimage">
+  <%= image_tag("kirei.jpg" ,class: "img-toukou") %>
+</div>
+
+<div class ="cacktailfield">
+<h3>アレンジカクテル</h3>
+<%= form_for @post do |f| %>
+  <div class="field">
+    <%= f.label :カクテル名 %>
+    <%= f.text_field :name, :size=> 30 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :種類  %>
+    <%= f.select :kinds, 
+    [["ロング", "ロング"],  
+    ["ショート", "ショート"]], include_blank: "選択して下さい" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :製法  %>
+    <%= f.select :method, 
+    [["シェイク", "シェイク"], 
+    ["ステア", "ステア"],
+    ["ビルド", "ビルド"], 
+    ["ブレンド", "ブレンド"]], include_blank: "選択して下さい" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :ベース %>
+    <%= f.text_field :base, :size => 30 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :材料 %>
+    <%= f.text_field :material, :size => 30 %>
+  </div>
+
+  <div class="field">
+    <%= f.label :image %>
+    <%= f.file_field :image %>
+  </div>
+
+  <%= f.submit "投稿する" %>
+<% end %>
+
+<%= link_to "一覧に戻る", posts_path %>
+
+</div>
